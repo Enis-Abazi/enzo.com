@@ -1,0 +1,446 @@
+html,
+body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    color: #20303c;
+}
+
+ol,
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: "Anurati";
+    src: url(../fonts/Anurati-Regular.otf);
+}
+
+@font-face {
+    font-family: "Elianto";
+    src: url(../fonts/Elianto-Regular.ttf);
+}
+
+@font-face {
+    font-family: "PPStellar Bold";
+    src: url(../fonts/PPStellar-Bold.otf);
+}
+
+@font-face {
+    font-family: "PPStellar Light";
+    src: url(../fonts/PPStellar-Light.otf);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    column-gap: 25px;
+    padding: 35px;
+    align-items: center;
+}
+
+header i {
+    color: #0072ff;
+}
+
+header h1 {
+    font-family: "PPStellar Bold";
+    font-size: 35px;
+}
+
+header .header-span {
+    font-family: "PPStellar Light";
+    font-size: 30px;
+}
+
+header ul {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    column-gap: 25px;
+    font-family: "PPStellar Light";
+}
+
+header ul li a {
+    color: #000;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+header .important a {
+    color: rgb(78, 78, 228);
+}
+
+header ul li a:hover {
+    color: rgb(78, 78, 228);
+    transition: 0.1s ease-out;
+}
+
+header nav,
+.menu {
+    display: none;
+}
+
+section {
+    padding: 150px 250px;
+    background: #6a82fb;
+}
+
+section .row {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+section .row h1 {
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 35px;
+    color: rgb(227, 227, 227);
+}
+
+section .row h2 {
+    text-align: start;
+    padding: 0 0 50px 0;
+    font-family: "PPStellar Bold";
+    font-size: 28px;
+    color: rgb(227, 227, 227);
+}
+
+section .row .download {
+    padding: 0 0 50px 0;
+    font-size: 23px;
+    font-family: sans-serif;
+    color: rgb(227, 227, 227);
+}
+
+section .row .download li {
+    color: rgb(227, 227, 227);
+}
+
+section .row .download button:hover {
+    background: transparent;
+    color: rgb(217, 215, 215);
+    border: 2px solid #0062ff;
+    transition: 0.3s ease-in;
+    font-weight: 500;
+}
+
+section .row .download button {
+    border: transparent;
+    border-radius: 25px;
+    padding: 8px;
+    background: #0072ff;
+    color: rgb(228, 225, 225);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+section .row .marked {
+    color: #0072ff;
+    padding: 0;
+}
+
+section .row .col .left h3,
+h4,
+h5 {
+    font-family: "PPStellar Light";
+}
+
+section .row .col .left h3 {
+    font-size: 25px;
+}
+
+section .row .col .left h4 {
+    font-size: 20px;
+}
+
+section .row .col .left h5 {
+    font-size: 17px;
+}
+
+.fa-solid {
+    color: #ff0081;
+}
+
+section .row .col {
+    padding: 50px;
+    flex-basis: 50%;
+}
+
+section .row .col .box .top .nav-squared {
+    list-style: square;
+    text-align: center;
+    padding: 0 10px 0 10px;
+    column-gap: 50px;
+}
+
+section .row .col .box .top .nav-squared-center {
+    list-style-type: square;
+    padding: 0;
+    column-gap: 0;
+    margin: 0 50px 0 0;
+}
+
+section .row .box {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    /*background-color: rgb(173 165 75 / 23%);*/
+    background: #fff;
+    padding: 100px;
+    box-shadow: 0 5px 25px rgb(184, 182, 182);
+}
+
+.right {
+    flex-basis: 50%;
+    font-family: "PPStellar Light";
+    font-size: 17px;
+}
+
+.left {
+    flex-basis: 50%;
+}
+
+footer {
+    padding: 35px;
+    align-items: center;
+}
+
+footer .row {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    column-gap: 20px;
+}
+
+footer .row .left-col {
+    flex-basis: 65%;
+}
+
+footer .row .left-col p {
+    font-family: "Elianto";
+}
+
+footer .row .left-col .web-info {
+    text-decoration: underline;
+    font-family: "Elianto";
+    cursor: pointer;
+}
+
+footer .row .left-col .web-info a {
+    color: #000;
+}
+
+footer .row .right-col {
+    flex-basis: 35%;
+}
+
+footer .row .right-col .nav {
+    font-family: "Elianto";
+}
+
+footer .row .right-col .nav-low i {
+    padding: 0 5px 0 5px;
+}
+
+footer .row .right-col .nav li {
+    padding: 0 25px 0 0;
+}
+
+footer .row .right-col .nav li:first-child {
+    padding: 0 0 0 25px;
+}
+
+footer .row .right-col .nav-low {
+    font-family: "PPStellar Light";
+}
+
+footer ol,
+ul {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    column-gap: 20px;
+}
+
+::marker {
+    color: blue;
+    font-size: 1.2rem;
+}
+
+.column-1 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background: #fff;
+    padding: 100px;
+    box-shadow: 0 5px 25px rgb(184 182 182);
+}
+
+.column-1 .x {
+    padding: 35px 0 35px 0;
+    color: #585454;
+}
+
+footer i {
+    color: black;
+}
+
+.container {
+    animation: transitionIn 0.75s;
+}
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: translateY(-80deg);
+    }
+    to {
+        opacity: 1;
+        transform: rotateX(2);
+    }
+}
+
+@media only screen and (max-width:800px) {
+    html,
+    body {
+        overflow-x: hidden;
+    }
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    header {
+        flex-direction: row;
+    }
+    header .important-ul {
+        padding: 15px;
+        flex-direction: column;
+        row-gap: 100px;
+        display: none;
+    }
+    header h1 {
+        font-size: 20px;
+    }
+    header .header-span {
+        font-size: 20px;
+    }
+    header nav {
+        display: inline;
+        position: absolute;
+        left: 85%;
+    }
+    header nav i {
+        font-size: 35px;
+    }
+    header nav .menu {
+        position: absolute;
+        top: 70px;
+        width: 100%;
+        left: -150px;
+        display: block;
+    }
+    header nav .menu li {
+        margin: 10px 0 10px 0;
+    }
+    section {
+        padding: 0;
+    }
+    section .row h2 {
+        padding: 10px 0;
+        text-align: center;
+    }
+    section .row h1 {
+        padding: 20px;
+    }
+    section .row .download {
+        padding: 0 0 30px 0;
+    }
+    section .row .box {
+        display: block;
+        padding: 10px;
+    }
+    section .row .col {
+        padding: 0 0 10px 0px;
+    }
+    section .row .marked {
+        text-align: start;
+    }
+    .column-1 .nav-squared {
+        flex-direction: column;
+        text-align: center;
+        margin: 0 0 0 20px;
+    }
+    .column-1 .nav-squared-center {
+        flex-direction: column;
+        text-align: center;
+        margin: 0 0 0 20px;
+    }
+    .column-1 {
+        padding: 10px;
+    }
+    footer {
+        padding: 0px;
+    }
+    footer .row {
+        flex-direction: column;
+        row-gap: 15px;
+    }
+    footer .row .left-col {
+        text-align: center;
+    }
+    footer .row .right-col .nav {
+        font-size: 15px;
+    }
+    footer .row .right-col .nav-low {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (min-width:801px) and (max-width:1240px) {
+    html,
+    body {
+        overflow-x: hidden;
+    }
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    section {
+        padding: 50px;
+    }
+    footer {
+        padding: 10px;
+    }
+    footer .row .left-col {
+        flex-basis: 50%;
+    }
+    footer .row .right-col {
+        flex-basis: 50%;
+    }
+    footer .nav-low {
+        column-gap: 0;
+    }
+}
+
+@media only screen and (min-width:1241px) {
+    html,
+    body {
+        overflow-x: hidden;
+    }
+    * {
+        padding: 0;
+        margin: 0;
+    }
+}

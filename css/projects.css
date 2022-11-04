@@ -1,0 +1,363 @@
+html,
+body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    color: #20303c;
+}
+
+ol,
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: "Anurati";
+    src: url(../fonts/Anurati-Regular.otf);
+}
+
+@font-face {
+    font-family: "Elianto";
+    src: url(../fonts/Elianto-Regular.ttf);
+}
+
+@font-face {
+    font-family: "PPStellar Bold";
+    src: url(../fonts/PPStellar-Bold.otf);
+}
+
+@font-face {
+    font-family: "PPStellar Light";
+    src: url(../fonts/PPStellar-Light.otf);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    column-gap: 25px;
+    padding: 35px;
+    align-items: center;
+}
+
+header i {
+    color: #ff0081;
+}
+
+header h1 {
+    font-family: "PPStellar Bold";
+    font-size: 35px;
+}
+
+header .header-span {
+    font-family: "PPStellar Light";
+    font-size: 30px;
+}
+
+header ul {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    column-gap: 25px;
+    font-family: "PPStellar Light";
+}
+
+header ul li a {
+    color: #000;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+header .important a {
+    color: rgb(78, 78, 228);
+}
+
+header ul li a:hover {
+    color: rgb(78, 78, 228);
+    transition: 0.1s ease-out;
+}
+
+header nav,
+.menu {
+    display: none;
+}
+
+section {
+    padding: 150px 250px;
+    background: #6a82fb;
+}
+
+section .row {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    row-gap: 35px;
+    padding: 50px;
+}
+
+section .row h4 {
+    font-size: 20px;
+    font-family: "PPStellar Bold";
+    color: rgb(227, 227, 227);
+}
+
+section .row h1 {
+    font-size: 40px;
+    font-family: sans-serif;
+    color: rgb(227, 227, 227);
+}
+
+section .row .col {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: #fffff5;
+}
+
+section .row .col .left {
+    text-align: start;
+    padding: 20px;
+    border: 1px solid grey;
+    flex-basis: 65%;
+}
+
+section .row .col .left .colored {
+    font-size: 30px;
+    font-family: "PPStellar Bold";
+    color: #005aff;
+    padding: 10px;
+}
+
+section .row .col .left .colored::before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    background-color: #005aff;
+    border-left: 4px solid #005aff;
+    position: relative;
+    left: -30px;
+}
+
+.fa-solid {
+    color: #ff0081;
+}
+
+section .row .col .left h3 {
+    font-size: 20px;
+    font-family: "PPStellar Bold";
+    padding: 10px;
+    color: #707070;
+}
+
+section .row .col .left p {
+    font-size: 17px;
+    font-family: "PPStellar Light";
+    color: #000000;
+}
+
+section .row .col .right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 0;
+}
+
+section .row .col .right {
+    flex-basis: 35%;
+}
+
+footer {
+    padding: 35px;
+    align-items: center;
+}
+
+footer .row {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    column-gap: 20px;
+}
+
+footer .row .left-col {
+    flex-basis: 65%;
+}
+
+footer .row .left-col p {
+    font-family: "Elianto";
+}
+
+footer .row .left-col .web-info {
+    text-decoration: underline;
+    font-family: "Elianto";
+    cursor: pointer;
+}
+
+footer .row .left-col .web-info a {
+    color: #000;
+}
+
+footer .row .right-col {
+    flex-basis: 35%;
+}
+
+footer .row .right-col .nav {
+    font-family: "Elianto";
+}
+
+footer .row .right-col .nav-low i {
+    padding: 0 5px 0 5px;
+}
+
+footer .row .right-col .nav li {
+    padding: 0 25px 0 0;
+}
+
+footer .row .right-col .nav li:first-child {
+    padding: 0 0 0 25px;
+}
+
+footer .row .right-col .nav-low {
+    font-family: "PPStellar Light";
+}
+
+footer ol,
+ul {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    column-gap: 20px;
+}
+
+footer i {
+    color: black;
+}
+
+.container {
+    animation: transitionIn 0.75s;
+}
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: translateY(-80deg);
+    }
+    to {
+        opacity: 1;
+        transform: rotateX(2);
+    }
+}
+
+@media only screen and (max-width:800px) {
+    html,
+    body {
+        overflow-x: hidden;
+    }
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    header {
+        flex-direction: row;
+    }
+    header .important-ul {
+        padding: 15px;
+        flex-direction: column;
+        row-gap: 100px;
+        display: none;
+    }
+    header h1 {
+        font-size: 20px;
+    }
+    header .header-span {
+        font-size: 20px;
+    }
+    header nav {
+        display: inline;
+        position: absolute;
+        left: 85%;
+    }
+    header nav i {
+        font-size: 35px;
+    }
+    header nav .menu {
+        position: absolute;
+        top: 70px;
+        width: 100%;
+        left: -150px;
+        display: block;
+    }
+    header nav .menu li {
+        margin: 10px 0 10px 0;
+    }
+    section {
+        padding: 0;
+    }
+    section .row footer {
+        padding: 0;
+    }
+    section .row .col {
+        flex-direction: column;
+    }
+    footer {
+        padding: 0px;
+    }
+    footer .row {
+        flex-direction: column;
+        row-gap: 15px;
+    }
+    footer .row .left-col {
+        text-align: center;
+    }
+    footer .row .right-col .nav {
+        font-size: 15px;
+    }
+    footer .row .right-col .nav-low {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (min-width:801px) and (max-width:1240px) {
+    html,
+    body {
+        overflow-x: hidden;
+    }
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    section {
+        padding: 50px;
+    }
+    footer {
+        padding: 10px;
+    }
+    footer .row .left-col {
+        flex-basis: 50%;
+    }
+    footer .row .right-col {
+        flex-basis: 50%;
+    }
+    footer .nav-low {
+        column-gap: 0;
+    }
+}
+
+@media only screen and (min-width:1241px) {
+    html,
+    body {
+        overflow-x: hidden;
+    }
+    * {
+        padding: 0;
+        margin: 0;
+    }
+}

@@ -1,0 +1,61 @@
+html,
+body {
+    overflow: hidden;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: antiquewhite;
+}
+
+nav ul {
+    text-align: center;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    row-gap: 50px;
+    padding: 130px 0 0 0;
+}
+
+nav i {
+    position: absolute;
+    left: 85%;
+    top: 30px;
+    font-size: 35px;
+    color: rgb(133 0 255);
+}
+
+nav ul li {
+    font-size: 25px;
+    font-family: sans-serif;
+}
+
+nav ul li a {
+    color: black;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.checked {
+    color: rgb(133 0 255);
+}
+
+nav {
+    animation: transitionIn 0.75s;
+}
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: translateY(-80deg);
+    }
+    to {
+        opacity: 1;
+        transform: rotateX(2);
+    }
+}

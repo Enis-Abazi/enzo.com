@@ -1,0 +1,362 @@
+html,
+body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    color: #20303c;
+}
+
+ol,
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: "Anurati";
+    src: url(../fonts/Anurati-Regular.otf);
+}
+
+@font-face {
+    font-family: "Elianto";
+    src: url(../fonts/Elianto-Regular.ttf);
+}
+
+@font-face {
+    font-family: "PPStellar Bold";
+    src: url(../fonts/PPStellar-Bold.otf);
+}
+
+@font-face {
+    font-family: "PPStellar Light";
+    src: url(../fonts/PPStellar-Light.otf);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    column-gap: 25px;
+    padding: 35px;
+    align-items: center;
+}
+
+header i {
+    color: #ff0081;
+}
+
+header h1 {
+    font-family: "PPStellar Bold";
+    font-size: 35px;
+}
+
+header .header-span {
+    font-family: "PPStellar Light";
+    font-size: 30px;
+}
+
+header ul {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    column-gap: 25px;
+    font-family: "PPStellar Light";
+}
+
+header ul li a {
+    color: #000;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+header .important a {
+    color: rgb(78, 78, 228);
+}
+
+header ul li a:hover {
+    color: rgb(78, 78, 228);
+    transition: 0.1s ease-out;
+}
+
+header nav,
+.menu {
+    display: none;
+}
+
+section {
+    background: #6a82fb;
+    padding: 150px 300px;
+}
+
+section h1 {
+    text-align: center;
+    font-size: 40px;
+    font-family: sans-serif;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+}
+
+section .center {
+    padding: 25px;
+}
+
+section .img img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+section .desc {
+    text-align: center;
+    padding: 25px;
+}
+
+section .desc h3 {
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: 500;
+    border-bottom: 1px solid white;
+    color: white;
+}
+
+section .desc p {
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+}
+
+section .row {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 20px 0;
+}
+
+section .row .col {
+    flex-basis: 50%;
+}
+
+section .row .col img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 1px solid black;
+}
+
+section .direct-link h2 {
+    color: white;
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: 500;
+}
+
+section .direct-link button {
+    padding: 10px;
+    font-size: 20px;
+    width: 150px;
+    color: white;
+    background: rgb(26, 228, 255);
+    border-radius: 25px;
+    border: transparent;
+    box-shadow: 0 5px 25px rgb(71, 191, 196);
+    margin: 20px 0 0 0;
+    cursor: pointer;
+}
+
+section .direct-link button:hover {
+    background: rgb(231, 229, 229);
+    color: rgb(26, 228, 255);
+    transition: 0.3s all linear;
+}
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: translateY(-80deg);
+    }
+    to {
+        opacity: 1;
+        transform: rotateX(2);
+    }
+}
+
+.contact i {
+    font-size: 25px;
+    color: rgb(133 0 255);
+    box-shadow: rgba(0, 0, 0 / 50%);
+}
+
+footer {
+    padding: 35px;
+    align-items: center;
+}
+
+footer .row {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    column-gap: 20px;
+}
+
+footer .row .left-col {
+    flex-basis: 65%;
+}
+
+footer .row .left-col p {
+    font-family: "Elianto";
+}
+
+footer .row .left-col .web-info {
+    text-decoration: underline;
+    font-family: "Elianto";
+    cursor: pointer;
+}
+
+footer .row .left-col .web-info a {
+    color: #000;
+}
+
+footer .row .right-col {
+    flex-basis: 35%;
+}
+
+footer .row .right-col .nav {
+    font-family: "Elianto";
+}
+
+footer .row .right-col .nav-low i {
+    padding: 0 5px 0 5px;
+}
+
+footer .row .right-col .nav li {
+    padding: 0 25px 0 0;
+}
+
+footer .row .right-col .nav li:first-child {
+    padding: 0 0 0 25px;
+}
+
+footer .row .right-col .nav-low {
+    font-family: "PPStellar Light";
+}
+
+footer ol,
+ul {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    column-gap: 20px;
+}
+
+footer i {
+    color: black;
+}
+
+@media only screen and (max-width:800px) {
+    html,
+    body {
+        overflow-x: hidden;
+    }
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    header {
+        flex-direction: row;
+    }
+    header .important-ul {
+        padding: 15px;
+        flex-direction: column;
+        row-gap: 100px;
+        display: none;
+    }
+    header h1 {
+        font-size: 20px;
+    }
+    header .header-span {
+        font-size: 20px;
+    }
+    header nav {
+        display: inline;
+        position: absolute;
+        left: 85%;
+    }
+    header nav i {
+        font-size: 35px;
+    }
+    header nav .menu {
+        position: absolute;
+        top: 70px;
+        width: 100%;
+        left: -150px;
+        display: block;
+    }
+    header nav .menu li {
+        margin: 10px 0 10px 0;
+    }
+    hr {
+        display: none;
+    }
+    section {
+        padding: 0;
+    }
+    section .row {
+        flex-direction: column;
+    }
+    section .direct-link {
+        padding: 0 0 20px 0;
+        text-align: center;
+    }
+    footer {
+        padding: 0;
+    }
+    footer .row {
+        flex-direction: column;
+        row-gap: 15px;
+    }
+    footer .row .left-col {
+        text-align: center;
+    }
+    footer .row .right-col .nav {
+        font-size: 15px;
+    }
+    footer .row .right-col .nav-low {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (min-width:801px) and (max-width:1240px) {
+    html,
+    body {
+        overflow-x: hidden;
+    }
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    section {
+        padding: 100px;
+    }
+    section .direct-link {
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width:1241px) {
+    html,
+    body {
+        overflow-x: hidden;
+    }
+    * {
+        padding: 0;
+        margin: 0;
+    }
+}

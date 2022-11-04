@@ -1,0 +1,10 @@
+    https://www.wix.com/website-template/view/html/2622?originUrl=https%3A%2F%2Fwww.wix.com%2Fwebsite%2Ftemplates%2Fhtml%2Fportfolio-cv%2Fresumes-cvs&tpClick=view_button&esi=d2f9b8c9-c234-4b62-a84e-913dd52b8a0d
+
+
+background   #6a82fb
+
+
+box   #20303c
+
+
+icon rgb(80 110 255)
